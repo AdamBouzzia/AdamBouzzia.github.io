@@ -2,194 +2,202 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <!-- Met deze meta tag zorgt de browser ervoor dat de site goed schaalt op mobiel en desktop -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Informatica Website - Homepage</title>
-
-    <!-- Inter-lettertype importeren via Google Fonts voor een strakke, moderne uitstraling -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <!-- Titel die bovenin het tabblad verschijnt -->
+    <title>Home - Adam Bouzzia</title>
+    
+    <!-- CSS Opmaak rechtstreeks toegevoegd voor een strakke en moderne weergave -->
     <style>
-        /* CSS-variabelen voor consistent kleurgebruik en overzichtelijkheid */
+        /* CSS Variabelen voor een consistent kleurenpalet */
         :root {
-            --primary-color: #2563eb;       /* Blauwe hoofdkleur */
-            --primary-hover: #1d4ed8;       /* Donkerblauwe kleur voor hover-effecten */
-            --bg-color: #f8fafc;            /* Lichte achtergrondkleur van de pagina */
-            --card-bg: #ffffff;             /* Witte achtergrond voor inhoudblokken */
-            --text-main: #0f172a;           /* Donkere tekstkleur voor een goed contrast */
-            --text-muted: #64748b;          /* Grijze tekstkleur voor subtitels */
-            --border-radius: 12px;          /* Afgeronde hoeken voor moderne look */
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --primary-color: #1e3a8a; /* Donkerblauw */
+            --secondary-color: #3b82f6; /* Lichtblauw */
+            --bg-color: #f3f4f6; /* Lichtgrijze achtergrond */
+            --card-bg: #ffffff; /* Witte achtergrond voor blokken */
+            --text-color: #1f2937; /* Donkergrijze tekst */
+            --accent-color: #10b981; /* Groen accent */
         }
 
-        /* Basisinstellingen voor de gehele pagina */
+        /* Algemene stijlen voor de hele pagina */
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-        }
-
-        /* Het navigatiemenu bovenaan de pagina */
-        nav {
-            background-color: var(--card-bg);
-            box-shadow: var(--shadow);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        /* De 'ul' is een ongestructureerde lijst die als menu dient */
-        nav ul {
-            list-style-type: none; /* Verwijdert de standaard opsommingstekens/bolletjes */
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
-            display: flex; /* Zet de menu-items naast elkaar */
-            justify-content: center;
-            flex-wrap: wrap; /* Zorgt dat items netjes afbreken op mobiel */
         }
 
-        /* Elk afzonderlijk menu-item */
-        nav li {
-            margin: 0;
-        }
-
-        /* De links binnen het menu */
-        nav li a {
-            display: block; /* Maakt de hele knop klikbaar */
-            padding: 1rem 1.5rem;
-            color: var(--text-main);
-            text-decoration: none; /* Verwijdert het standaard onderstrepen van links */
-            font-weight: 500;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-
-        /* Hover-effect op menuknoppen voor betere interactie */
-        nav li a:hover {
-            background-color: var(--primary-color);
-            color: #ffffff;
-        }
-
-        /* Actieve pagina stylen */
-        nav li a.active {
-            color: var(--primary-color);
-            border-bottom: 3px solid var(--primary-color);
-        }
-
-        /* Header bovenaan de inhoud */
+        /* Header en titel */
         header {
+            background-color: var(--primary-color);
+            color: white;
             text-align: center;
-            padding: 3rem 1rem 2rem 1rem;
-            background-color: var(--card-bg);
-            border-bottom: 1px solid #e2e8f0;
+            padding: 2rem 1rem;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.25rem;
-            color: var(--text-main);
+            font-size: 2.5rem;
         }
 
         header p {
             margin-top: 0.5rem;
-            font-size: 1.1rem;
-            color: var(--text-muted);
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
 
-        /* Hoofdcontainer van de pagina */
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        /* Navigatiemenu opmaak (unordered list) */
+        nav {
+            background-color: var(--secondary-color);
         }
 
-        /* Een kaart/blok voor inhoud */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover-effect op links in het menu */
+        nav a:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Main container voor de inhoud */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Kaarten/secties op de pagina */
         .card {
             background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            margin-bottom: 2rem;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .card h2 {
-            margin-top: 0;
             color: var(--primary-color);
-            font-size: 1.5rem;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+            margin-top: 0;
         }
 
-        /* Afbeeldingen responsive maken */
-        .card img {
-            width: 100%;
+        /* Lijst van hobby's en informatie */
+        .info-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .info-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Social media highlight */
+        .social-box {
+            background-color: #e0f2fe;
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        /* Afbeelding opmaak */
+        .profile-img {
+            max-width: 100%;
             height: auto;
-            border-radius: var(--border-radius);
-            margin-top: 1rem;
+            border-radius: 8px;
             display: block;
+            margin: 15px 0;
         }
 
-        /* Footer onderaan de pagina */
+        /* Footer opmaak */
         footer {
             text-align: center;
-            padding: 2rem 1rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            border-top: 1px solid #e2e8f0;
-            margin-top: 3rem;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVIGATIEMENU: Een lijst van links om tussen de pagina's te navigeren -->
+    <!-- Header: Welkomsttitel van de site -->
+    <header>
+        <h1>Welkom op de site van Adam Bouzzia</h1>
+        <p>15 jaar | Voetbal & Gym Liefhebber</p>
+    </header>
+
+    <!-- Navigatiemenu: Unordered list (ul) met links naar overige pagina's -->
     <nav>
         <ul>
-            <!-- 'active' klasse geeft aan op welke pagina de bezoeker nu is -->
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="binairstelsel.html">Binairstelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
         </ul>
     </nav>
 
-    <!-- HEADER: De hoofdkop en subtitel van de website -->
-    <header>
-        <h1>Welkom op mijn Informatica Website</h1>
-        <p>Ontdek alles over het binairstelsel en kleurmodellen</p>
-    </header>
-
-    <!-- MAIN CONTENT: De eigenlijke inhoud van de pagina -->
-    <main>
-        <!-- Inhoudsblok 1: Introductie -->
-        <div class="card">
-            <h2>Over deze website</h2>
+    <!-- Hoofdinhoud van de pagina -->
+    <div class="container">
+        
+        <!-- Introductie Sectie -->
+        <section class="card">
+            <h2>Over Mij</h2>
             <p>
-                Hallo! Dit is de homepage van mijn informatica-project. Op deze website kun je informatie vinden over
-                verschillende informatica-onderwerpen zoals hoe het <strong>binairstelsel</strong> werkt en hoe
-                <strong>kleurmodellen</strong> (zoals RGB en CMYK) worden gebruikt op computers.
+                Hallo! Mijn naam is <strong>Adam Bouzzia</strong> en ik ben 15 jaar oud. 
+                Dit is mijn persoonlijke website die ik heb gebouwd via GitHub Pages voor school. 
+                Op deze pagina kun je wat meer over mijn hobby's en interesses lezen.
             </p>
-            <p>
-                Gebruik het menu bovenaan de pagina om door de verschillende onderwerpen te navigeren.
-            </p>
-        </div>
+            
+            <!-- Afbeelding toevoegen (pas de bestandsnaam aan naar jouw eigen afbeelding op GitHub) -->
+            <img src="voetbal_gym.jpg" alt="Voetbal en Gym ervaring" class="profile-img">
+        </section>
 
-        <!-- Inhoudsblok 2: Afbeelding voorbeeld -->
-        <div class="card">
-            <h2>Informatica in beeld</h2>
-            <p>
-                Hieronder zie je een voorbeeld van hoe informatica en technologie samenkomen. Via HTML kunnen we afbeeldingen
-                eenvoudig toevoegen aan onze webpagina met het <code>&lt;img&gt;</code> element.
-            </p>
-            <!-- AFBEELDING: De 'src' is de locatie/link, 'alt' geeft tekst als de afbeelding niet kan laden -->
-            <img src="https://placehold.co/800x400/2563eb/ffffff?text=Mijn+Informatica+Project" alt="Project Afbeelding Placeholder">
-        </div>
-    </main>
+        <!-- Hobby's en Interesses -->
+        <section class="card">
+            <h2>Mijn Hobby's & Passies</h2>
+            <p>In mijn vrije tijd ben ik erg actief bezig. Mijn twee grootste passies zijn:</p>
+            <ul class="info-list">
+                <li><strong>Voetbal:</strong> Ik ben dol op voetbal, zowel zelf spelen op het veld als kijken naar wedstrijden.</li>
+                <li><strong>Gym:</strong> Ik ben regelmatig in de sportschool te vinden om aan mijn kracht en conditie te werken.</li>
+            </ul>
+        </section>
 
-    <!-- FOOTER: Informatie helemaal onderaan de pagina -->
+        <!-- Social Media Sectie -->
+        <section class="card">
+            <h2>Social Media</h2>
+            <p>Wil je meer van mij zien of in contact komen?</p>
+            <div class="social-box">
+                <p><strong>Volg mij op Socials:</strong> @adambouzzia</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Voettekst / Footer -->
     <footer>
-        <p>&copy; 2026 Mijn Informatica Website — Gemaakt voor Informatica Domein C</p>
+        <p>&copy; 2026 Adam Bouzzia. Gemaakt voor de informatiekunde/informatica opdracht.</p>
     </footer>
 
 </body>
