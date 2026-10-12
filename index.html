@@ -2,144 +2,43 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titel op het tabblad -->
-    <title>Adam Bouzzia</title>
-    
-    <style>
-        /* Eenvoudige, schone opmaak */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9fafb;
-            color: #111827;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Koptekst van de pagina */
-        header {
-            background-color: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin-top: 5px;
-            color: #9ca3af;
-            font-size: 1.1rem;
-        }
-
-        /* Navigatiemenu */
-        nav {
-            background-color: #374151;
-            text-align: center;
-        }
-
-        nav a {
-            display: inline-block;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #4b5563;
-        }
-
-        /* Inhoud van de pagina */
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #1f2937;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 5px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* Foto's naast elkaar */
-        .images {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-        .images img {
-            width: 100%;
-            max-width: 380px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-    </style>
+    <title>Mijn Website - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Adam Bouzzia</h1>
-        <p>15 jaar | Voetbal & Gym</p>
-    </header>
-
-    <!-- Menu -->
+    <!-- Het volledige navigatiemenu -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="binairstelsel.html">Binairstelsel</a>
+        <a href="eva.html">EVA</a>
+        <a href="binair.html">Binair</a>
         <a href="kleurmodellen.html">Kleurmodellen</a>
+        <a href="compressie.html">Compressie</a>
+        <a href="ai.html">AI</a>
     </nav>
 
-    <!-- Hoofdinhoud -->
     <div class="container">
+        <h1>Welkom op mijn website!</h1>
         
-        <!-- Over mij -->
-        <div class="section">
-            <h2>Over mij</h2>
-            <p>Hoi, ik ben Adam Bouzzia en ik ben 15 jaar oud. Dit is mijn website voor school.</p>
+        <img src="https://picsum.photos/400/250" alt="Voetbal">
+
+        <h2>Over mezelf</h2>
+        <p>Hoi! Ik ben 15 jaar oud. In mijn vrije tijd hou ik erg van voetbal en ben ik vaak te vinden op het veld met vrienden. Deze website heb ik gemaakt voor het vak Informatica op school.</p>
+
+        <h2>Wat vind je op deze site?</h2>
+        <p>Op de verschillende pagina's in het menu bovenaan leg ik een aantal belangrijke informatica-onderwerpen uit:</p>
+        <ul>
+            <li><strong>EVA:</strong> Invoer, Verwerking en Uitvoer.</li>
+            <li><strong>Binair:</strong> Hoe computers rekenen met 0 en 1.</li>
+            <li><strong>Kleurmodellen:</strong> Het verschil tussen RGB en CMYK.</li>
+            <li><strong>Compressie:</strong> Verschil tussen Bitmap en Vector.</li>
+            <li><strong>AI:</strong> Kunstmatige intelligentie op je telefoon en in het dagelijks leven.</li>
+        </ul>
+
+        <div class="uitleg-blok">
+            <h3>Korte samenvatting Informatica</h3>
+            <p>Informatica gaat niet alleen over computers, maar vooral over hoe informatie wordt verwerkt en opgeslagen. Met HTML en CSS kun je zelf bepalen hoe die informatie op een scherm wordt weergegeven.</p>
         </div>
-
-        <!-- Hobby's en foto's -->
-        <div class="section">
-            <h2>Mijn hobby's</h2>
-            <ul>
-                <li><strong>Voetbal:</strong> Ik ben gek op voetbal en sta graag op het veld.</li>
-                <li><strong>Gym:</strong> Ik ga regelmatig naar de sportschool.</li>
-            </ul>
-
-            <div class="images">
-                <img src="voetbal.jpg" alt="Voetbal">
-                <img src="gym.jpg" alt="Gym">
-            </div>
-        </div>
-
-        <!-- Socials -->
-        <div class="section">
-            <h2>Social media</h2>
-            <p>Volg mij op socials via: <strong>@adambouzzia</strong></p>
-        </div>
-
     </div>
 
 </body>
