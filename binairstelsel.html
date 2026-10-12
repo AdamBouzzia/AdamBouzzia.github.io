@@ -2,60 +2,41 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informatica - Binair Stelsel</title>
-    <!-- Koppeling naar het centrale CSS-bestand voor de opmaak -->
-    <link rel="stylesheet" href="opmaak.css">
+    <title>Binair Stelsel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigatiemenu met links naar alle pagina's -->
-    <nav class="navbar">
-        <div class="logo">Mijn Informatica Site</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html" class="active">Binair Stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-        </ul>
+    <!-- Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="eva.html">EVA</a>
+        <a href="binair.html">Binair</a>
+        <a href="kleurmodellen.html">Kleurmodellen</a>
+        <a href="compressie.html">Compressie</a>
+        <a href="ai.html">AI</a>
     </nav>
 
-    <!-- Paginatitel -->
-    <header class="header">
+    <!-- Inhoud -->
+    <div class="container">
         <h1>Het Binaire Stelsel</h1>
-        <p>Hoe computers rekenen met alleen maar enen en nullen (0 en 1).</p>
-    </header>
+        
+        <h2>Werken met 0 en 1</h2>
+        <p>Computers begrijpen alleen maar stroom aan (1) of stroom uit (0). Dit noemen we het binaire stelsel.</p>
 
-    <!-- Inhoud van de pagina -->
-    <main class="container">
-        <section class="card">
-            <h2>Wat is het binair stelsel?</h2>
-            <!-- Uitleg over binaire getallen -->
-            <p>
-                Een computer werkt op elektriciteit en kent in de basis maar twee toestanden: 
-                <strong>AAN (1)</strong> of <strong>UIT (0)</strong>. Dit noemen we het 
-                <em>tweetalig</em> of <em>binaire stelsel</em>. 
-            </p>
-            <p>
-                Elke 0 of 1 noemen we een <strong>bit</strong>. Een reeks van 8 bits bij elkaar vormt samen één <strong>byte</strong>.
-            </p>
+        <h3>Binary Bonanza</h3>
+        <p>Klik op het plaatje hieronder om de game Binary Bonanza te spelen:</p>
+        
+        <!-- Klikbaar plaatje met link naar Binary Bonanza -->
+        <a href="https://www.cisco.com/c/dam/en_us/about/ac79/docs/innov/Binary_Bonanza.swf" target="_blank">
+            <img src="https://picsum.photos/400/250" alt="Speel Binary Bonanza">
+        </a>
 
-            <!-- Afbeelding met alt-tekst -->
-            <div class="image-box">
-                <img src="binair_voorbeeld.jpg" alt="Afbeelding die binaire code van enen en nullen laat zien">
-                <p class="caption">Binaire code vormt de basis van alle software.</p>
-            </div>
-
-            <!-- Interactieve link naar de game Binary Bonanza -->
-            <h3>Speel Binary Bonanza</h3>
-            <p>Met de game Binary Bonanza kun je oefenen hoe snel je binaire getallen kunt omrekenen naar gewone decimalen!</p>
-            <a href="https://www.cisco.com/" target="_blank" class="btn">Speel Binary Bonanza Game</a>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 - Informatica Opdracht Domein C</p>
-    </footer>
+        <h3>Video over Binair</h3>
+        <!-- YouTube video -->
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/kd72O3d9q2M"></iframe>
+        <p><strong>Uitleg video:</strong> In deze video zie je hoe je snel kunt omrekenen van gewone getallen naar binaire getallen.</p>
+    </div>
 
 </body>
 </html>
