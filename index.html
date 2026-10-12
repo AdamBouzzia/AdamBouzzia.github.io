@@ -1,10 +1,196 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
 <head>
-    <title>Mijn website</title>
+    <meta charset="UTF-8">
+    <!-- Met deze meta tag zorgt de browser ervoor dat de site goed schaalt op mobiel en desktop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Informatica Website - Homepage</title>
+
+    <!-- Inter-lettertype importeren via Google Fonts voor een strakke, moderne uitstraling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS-variabelen voor consistent kleurgebruik en overzichtelijkheid */
+        :root {
+            --primary-color: #2563eb;       /* Blauwe hoofdkleur */
+            --primary-hover: #1d4ed8;       /* Donkerblauwe kleur voor hover-effecten */
+            --bg-color: #f8fafc;            /* Lichte achtergrondkleur van de pagina */
+            --card-bg: #ffffff;             /* Witte achtergrond voor inhoudblokken */
+            --text-main: #0f172a;           /* Donkere tekstkleur voor een goed contrast */
+            --text-muted: #64748b;          /* Grijze tekstkleur voor subtitels */
+            --border-radius: 12px;          /* Afgeronde hoeken voor moderne look */
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Basisinstellingen voor de gehele pagina */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Het navigatiemenu bovenaan de pagina */
+        nav {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* De 'ul' is een ongestructureerde lijst die als menu dient */
+        nav ul {
+            list-style-type: none; /* Verwijdert de standaard opsommingstekens/bolletjes */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Zet de menu-items naast elkaar */
+            justify-content: center;
+            flex-wrap: wrap; /* Zorgt dat items netjes afbreken op mobiel */
+        }
+
+        /* Elk afzonderlijk menu-item */
+        nav li {
+            margin: 0;
+        }
+
+        /* De links binnen het menu */
+        nav li a {
+            display: block; /* Maakt de hele knop klikbaar */
+            padding: 1rem 1.5rem;
+            color: var(--text-main);
+            text-decoration: none; /* Verwijdert het standaard onderstrepen van links */
+            font-weight: 500;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        /* Hover-effect op menuknoppen voor betere interactie */
+        nav li a:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        /* Actieve pagina stylen */
+        nav li a.active {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        /* Header bovenaan de inhoud */
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+            background-color: var(--card-bg);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.25rem;
+            color: var(--text-main);
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* Hoofdcontainer van de pagina */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Een kaart/blok voor inhoud */
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        /* Afbeeldingen responsive maken */
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+            display: block;
+        }
+
+        /* Footer onderaan de pagina */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
-    Dit is mijn eerste website
-    <a href="index.html">Take me home country road </a>
-   <a href="binairstelsel.html">Binair</a>
+
+    <!-- NAVIGATIEMENU: Een lijst van links om tussen de pagina's te navigeren -->
+    <nav>
+        <ul>
+            <!-- 'active' klasse geeft aan op welke pagina de bezoeker nu is -->
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="binairstelsel.html">Binairstelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER: De hoofdkop en subtitel van de website -->
+    <header>
+        <h1>Welkom op mijn Informatica Website</h1>
+        <p>Ontdek alles over het binairstelsel en kleurmodellen</p>
+    </header>
+
+    <!-- MAIN CONTENT: De eigenlijke inhoud van de pagina -->
+    <main>
+        <!-- Inhoudsblok 1: Introductie -->
+        <div class="card">
+            <h2>Over deze website</h2>
+            <p>
+                Hallo! Dit is de homepage van mijn informatica-project. Op deze website kun je informatie vinden over
+                verschillende informatica-onderwerpen zoals hoe het <strong>binairstelsel</strong> werkt en hoe
+                <strong>kleurmodellen</strong> (zoals RGB en CMYK) worden gebruikt op computers.
+            </p>
+            <p>
+                Gebruik het menu bovenaan de pagina om door de verschillende onderwerpen te navigeren.
+            </p>
+        </div>
+
+        <!-- Inhoudsblok 2: Afbeelding voorbeeld -->
+        <div class="card">
+            <h2>Informatica in beeld</h2>
+            <p>
+                Hieronder zie je een voorbeeld van hoe informatica en technologie samenkomen. Via HTML kunnen we afbeeldingen
+                eenvoudig toevoegen aan onze webpagina met het <code>&lt;img&gt;</code> element.
+            </p>
+            <!-- AFBEELDING: De 'src' is de locatie/link, 'alt' geeft tekst als de afbeelding niet kan laden -->
+            <img src="https://placehold.co/800x400/2563eb/ffffff?text=Mijn+Informatica+Project" alt="Project Afbeelding Placeholder">
+        </div>
+    </main>
+
+    <!-- FOOTER: Informatie helemaal onderaan de pagina -->
+    <footer>
+        <p>&copy; 2026 Mijn Informatica Website — Gemaakt voor Informatica Domein C</p>
+    </footer>
+
 </body>
 </html>
