@@ -113,6 +113,32 @@
             margin-bottom: 8px;
         }
 
+        /* Raster (grid) voor de twee afbeeldingen naast elkaar */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-card {
+            text-align: center;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+
+        .image-card p {
+            margin-top: 8px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
         /* Social media highlight */
         .social-box {
             background-color: #e0f2fe;
@@ -120,15 +146,6 @@
             padding: 15px;
             margin-top: 15px;
             border-radius: 4px;
-        }
-
-        /* Afbeelding opmaak */
-        .profile-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 15px 0;
         }
 
         /* Footer opmaak */
@@ -169,12 +186,9 @@
                 Dit is mijn persoonlijke website die ik heb gebouwd via GitHub Pages voor school. 
                 Op deze pagina kun je wat meer over mijn hobby's en interesses lezen.
             </p>
-            
-            <!-- Afbeelding toevoegen (pas de bestandsnaam aan naar jouw eigen afbeelding op GitHub) -->
-            <img src="voetbal_gym.jpg" alt="Voetbal en Gym ervaring" class="profile-img">
         </section>
 
-        <!-- Hobby's en Interesses -->
+        <!-- Hobby's en Interesses inclusief de twee afbeeldingen -->
         <section class="card">
             <h2>Mijn Hobby's & Passies</h2>
             <p>In mijn vrije tijd ben ik erg actief bezig. Mijn twee grootste passies zijn:</p>
@@ -182,6 +196,18 @@
                 <li><strong>Voetbal:</strong> Ik ben dol op voetbal, zowel zelf spelen op het veld als kijken naar wedstrijden.</li>
                 <li><strong>Gym:</strong> Ik ben regelmatig in de sportschool te vinden om aan mijn kracht en conditie te werken.</li>
             </ul>
+
+            <!-- Hier worden de twee foto's weergegeven -->
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="voetbal.jpg" alt="Voetbal op het veld">
+                    <p>Voetbal</p>
+                </div>
+                <div class="image-card">
+                    <img src="gym.jpg" alt="De sportschool / Gym">
+                    <p>Gym & Fitness</p>
+                </div>
+            </div>
         </section>
 
         <!-- Social Media Sectie -->
