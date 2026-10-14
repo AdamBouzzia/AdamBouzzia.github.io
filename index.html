@@ -2,39 +2,64 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn Website - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Koppeling naar het losse CSS-bestand -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
+    <!-- Navigatiemenu met dropdown -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="eva.html">EVA</a>
-        <a href="binairstelsel.html">Binair</a>
-        <a href="kleurmodellen.html">Kleurmodellen</a>
-        <a href="compressie.html">Compressie</a>
-        <a href="ai.html">AI</a>
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Onderwerpen &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="eva.html">EVA</a></li>
+                    <li><a href="binairstelsel.html">Binair</a></li>
+                    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+                    <li><a href="compressie.html">Compressie</a></li>
+                    <li><a href="ai.html">AI</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
+    <!-- Hoofdcontainer -->
     <div class="container">
         <h1>Welkom op mijn website!</h1>
         
-        <!-- Foto van voetbal -->
-        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500" alt="Voetbal op het veld">
+        <!-- Indeling in drie kolommen (Links, Midden, Rechts) -->
+        <div class="kolom-container">
+            
+            <!-- Linker kolom -->
+            <div class="kolom kolom-links">
+                <h2>Over mezelf</h2>
+                <p>Hoi! Ik ben 15 jaar oud. In mijn vrije tijd hou ik erg van voetbal en ben ik vaak te vinden op het veld met vrienden. Deze website heb ik gemaakt voor het vak Informatica op school.</p>
+            </div>
 
-        <h2>Over mezelf</h2>
-        <p>Hoi! Ik ben 15 jaar oud. In mijn vrije tijd hou ik erg van voetbal en ben ik vaak te vinden op het veld met vrienden. Deze website heb ik gemaakt voor het vak Informatica op school.</p>
+            <!-- Middelste kolom (Afbeelding) -->
+            <div class="kolom kolom-midden">
+                <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500" alt="Voetbal op het veld">
+            </div>
 
-        <h2>Wat vind je op deze site?</h2>
-        <p>Op de verschillende pagina's in het menu bovenaan leg ik een aantal belangrijke informatica-onderwerpen uit:</p>
-        <ul>
-            <li><strong>EVA:</strong> Invoer, Verwerking en Uitvoer.</li>
-            <li><strong>Binair:</strong> Hoe computers rekenen met 0 en 1.</li>
-            <li><strong>Kleurmodellen:</strong> Het verschil tussen RGB en CMYK.</li>
-            <li><strong>Compressie:</strong> Verschil tussen Bitmap en Vector.</li>
-            <li><strong>AI:</strong> Kunstmatige intelligentie op je telefoon en in het dagelijks leven.</li>
-        </ul>
+            <!-- Rechter kolom -->
+            <div class="kolom kolom-rechts">
+                <h2>Wat vind je op deze site?</h2>
+                <p>Op de verschillende pagina's leg ik een aantal belangrijke informatica-onderwerpen uit:</p>
+                <ul>
+                    <li><strong>EVA:</strong> Invoer, Verwerking en Uitvoer.</li>
+                    <li><strong>Binair:</strong> Hoe computers rekenen met 0 en 1.</li>
+                    <li><strong>Kleurmodellen:</strong> Het verschil tussen RGB en CMYK.</li>
+                    <li><strong>Compressie:</strong> Verschil tussen Bitmap en Vector.</li>
+                    <li><strong>AI:</strong> Kunstmatige intelligentie op je telefoon en in het dagelijks leven.</li>
+                </ul>
+            </div>
 
+        </div>
+
+        <!-- Extra blok onderaan -->
         <div class="uitleg-blok">
             <h3>Korte samenvatting Informatica</h3>
             <p>Informatica gaat niet alleen over computers, maar vooral over hoe informatie wordt verwerkt en opgeslagen. Met HTML en CSS kun je zelf bepalen hoe die informatie op een scherm wordt weergegeven.</p>

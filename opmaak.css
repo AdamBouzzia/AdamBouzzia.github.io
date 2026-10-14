@@ -1,46 +1,134 @@
-/* Basis opmaak van de pagina */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 20px;
+/* Algemene basisinstellingen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigatiemenu bovenaan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Navigatiebalk */
 nav {
-    background-color: #333;
-    padding: 12px;
+    background-color: #1a365d;
+}
+
+nav ul.main-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.main-menu > li {
+    position: relative;
 }
 
 nav a {
-    color: white;
-    margin-right: 15px;
+    display: block;
+    color: #ffffff;
+    padding: 14px 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #00bcd4;
+    background-color: #2b6cb0;
 }
 
-/* De witte achtergrond voor de inhoud */
-.container {
-    background: white;
-    padding: 20px;
-    margin-top: 10px;
+/* Dropdown menu functionaliteit */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    list-style-type: none;
+    z-index: 100;
 }
 
-/* Afbeeldingen op een vast formaat */
-img {
-    max-width: 400px;
-    height: auto;
+.dropdown-menu a {
+    color: #333333;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.dropdown-menu a:hover {
+    background-color: #edf2f7;
+    color: #2b6cb0;
+}
+
+.dropdown:hover .dropdown-menu {
     display: block;
-    margin: 15px 0;
 }
 
-/* Informatie-blok ter vervanging van de video's */
+/* Layout container */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 25px;
+}
+
+/* Drie kolommen naast elkaar met Flexbox */
+.kolom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.kolom {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.kolom h2 {
+    color: #2b6cb0;
+    margin-bottom: 10px;
+}
+
+.kolom ul {
+    padding-left: 20px;
+}
+
+/* Afbeelding in de middelste kolom */
+.kolom-midden {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+    padding: 0;
+}
+
+.kolom-midden img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Onderste tekstblok */
 .uitleg-blok {
-    background-color: #eef7ff;
-    border-left: 5px solid #0284c7;
-    padding: 15px;
-    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2b6cb0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.uitleg-blok h3 {
+    color: #1a365d;
+    margin-bottom: 10px;
 }
