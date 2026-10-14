@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    color: #333333;
+    background-color: #65a2de;
+    color: #82debc;
     line-height: 1.6;
 }
 
@@ -29,7 +29,7 @@ nav ul.main-menu > li {
 
 nav a {
     display: block;
-    color: #ffffff;
+    color: #b6d7ff;
     padding: 14px 20px;
     text-decoration: none;
     font-weight: bold;
