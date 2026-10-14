@@ -6,15 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #65a2de;
-    color: #82debc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eef4f8; /* Zachte babyblauwe/lichtblauwe achtergrond */
+    color: #111111; /* Zwarte tekst */
     line-height: 1.6;
 }
 
-/* Navigatiebalk */
+/* Navigatiebalk - Donkerblauw */
 nav {
-    background-color: #1a365d;
+    background-color: #0b2545;
 }
 
 nav ul.main-menu {
@@ -29,14 +29,16 @@ nav ul.main-menu > li {
 
 nav a {
     display: block;
-    color: #b6d7ff;
-    padding: 14px 20px;
+    color: #ffffff;
+    padding: 14px 22px;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Hover-effect op navigatielinks - Babyblauw accent */
 nav a:hover {
-    background-color: #2b6cb0;
+    background-color: #8da9c4;
+    color: #0b2545;
 }
 
 /* Dropdown menu functionaliteit */
@@ -45,20 +47,22 @@ nav a:hover {
     position: absolute;
     background-color: #ffffff;
     min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
     list-style-type: none;
     z-index: 100;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
 }
 
 .dropdown-menu a {
-    color: #333333;
-    padding: 10px 15px;
-    border-bottom: 1px solid #eeeeee;
+    color: #111111;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eef4f8;
 }
 
 .dropdown-menu a:hover {
-    background-color: #edf2f7;
-    color: #2b6cb0;
+    background-color: #eef4f8;
+    color: #0b2545;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -68,14 +72,14 @@ nav a:hover {
 /* Layout container */
 .container {
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 35px auto;
     padding: 0 20px;
 }
 
 h1 {
     text-align: center;
-    color: #1a365d;
-    margin-bottom: 25px;
+    color: #0b2545; /* Donkerblauw */
+    margin-bottom: 30px;
 }
 
 /* Drie kolommen naast elkaar met Flexbox */
@@ -90,45 +94,55 @@ h1 {
 .kolom {
     flex: 1;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 22px;
+    border-radius: 10px;
+    border-top: 4px solid #8da9c4; /* Babyblauwe bovenrand */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .kolom h2 {
-    color: #2b6cb0;
-    margin-bottom: 10px;
+    color: #0b2545;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #8da9c4;
+    padding-bottom: 5px;
 }
 
 .kolom ul {
     padding-left: 20px;
 }
 
+.kolom ul li {
+    margin-bottom: 6px;
+}
+
 /* Afbeelding in de middelste kolom */
 .kolom-midden {
     background-color: transparent;
     box-shadow: none;
+    border-top: none;
     text-align: center;
     padding: 0;
 }
 
 .kolom-midden img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 320px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 3px solid #8da9c4; /* Babyblauwe rand om foto */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 /* Onderste tekstblok */
 .uitleg-blok {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #2b6cb0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 22px;
+    border-radius: 10px;
+    border-left: 6px solid #0b2545; /* Donkerblauwe accentrand */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .uitleg-blok h3 {
-    color: #1a365d;
+    color: #0b2545;
     margin-bottom: 10px;
 }
