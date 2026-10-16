@@ -1,227 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Website - Home</title>
-    
-    <style>
-        /* Alles resetten */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Achtergrond en standaard tekstkleur */
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #d0e1fd !important; /* DUIDELIJK BABYBLAUW */
-            color: #000000 !important;            /* ZWARTE TEKST */
-            line-height: 1.6;
-        }
-
-        /* Navigatiebalk: Donkerblauw */
-        nav {
-            background-color: #0b2545 !important;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
-
-        nav ul.main-menu {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul.main-menu > li {
-            position: relative;
-        }
-
-        nav a {
-            display: block;
-            color: #ffffff !important;
-            padding: 16px 24px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Hover op menu: Babyblauw met zwarte tekst */
-        nav a:hover {
-            background-color: #8da9c4 !important;
-            color: #000000 !important;
-        }
-
-        /* Dropdown menu */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: #ffffff !important;
-            min-width: 180px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
-            list-style-type: none;
-            z-index: 100;
-            border-radius: 0 0 6px 6px;
-            overflow: hidden;
-        }
-
-        .dropdown-menu a {
-            color: #000000 !important;
-            padding: 12px 16px;
-            border-bottom: 1px solid #d0e1fd;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #d0e1fd !important;
-            color: #0b2545 !important;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        /* Hoofdcontainer */
-        .container {
-            max-width: 1100px;
-            margin: 35px auto;
-            padding: 0 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #0b2545 !important;
-            margin-bottom: 30px;
-            font-size: 2.2rem;
-        }
-
-        /* Layout met 3 kolommen */
-        .kolom-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        /* Blokken links en rechts */
-        .kolom {
-            flex: 1;
-            background-color: #ffffff !important;
-            padding: 25px;
-            border-radius: 12px;
-            border-top: 6px solid #8da9c4 !important; /* Babyblauwe rand */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .kolom h2 {
-            color: #0b2545 !important; /* Donkerblauw */
-            margin-bottom: 12px;
-            border-bottom: 2px solid #8da9c4;
-            padding-bottom: 5px;
-        }
-
-        .kolom p, .kolom li {
-            color: #000000 !important; /* Zwarte tekst */
-        }
-
-        .kolom ul {
-            padding-left: 20px;
-        }
-
-        .kolom ul li {
-            margin-bottom: 8px;
-        }
-
-        /* Middelste kolom (Afbeelding) */
-        .kolom-midden {
-            background-color: transparent !important;
-            box-shadow: none;
-            border-top: none !important;
-            text-align: center;
-            padding: 0;
-        }
-
-        .kolom-midden img {
-            width: 100%;
-            max-width: 320px;
-            height: auto;
-            border-radius: 12px;
-            border: 4px solid #0b2545; /* Donkerblauwe rand om foto */
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Onderste tekstblok */
-        .uitleg-blok {
-            background-color: #ffffff !important;
-            padding: 25px;
-            border-radius: 12px;
-            border-left: 8px solid #0b2545 !important; /* Donkerblauwe balk */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            color: #000000 !important;
-        }
-
-        .uitleg-blok h3 {
-            color: #0b2545 !important;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Mijn website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigatiemenu -->
-    <nav>
-        <ul class="main-menu">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Onderwerpen &#9662;</a>
-                <ul class="dropdown-menu">
-                    <li><a href="IVU.html">IVU</a></li>
-                    <li><a href="binairstelsel.html">Binair</a></li>
-                    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-                    <li><a href="compressie.html">Compressie</a></li>
-                    <li><a href="ai.html">AI</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<header>
+    <h1>Welkom op mijn website!</h1>
+    <p>Mijn website voor Informatica</p>
+</header>
 
-    <!-- Content -->
-    <div class="container">
-        <h1>Welkom op mijn website!</h1>
-        
-        <div class="kolom-container">
-            
-            <!-- Linker kolom -->
-            <div class="kolom kolom-links">
-                <h2>Over mezelf</h2>
-                <p>Hoi! Ik ben 15 jaar oud. In mijn vrije tijd hou ik erg van voetbal en ben ik vaak te vinden op het veld met vrienden. Deze website heb ik gemaakt voor het vak Informatica op school.</p>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Onderwerpen ▼</a>
+            <div class="dropdown-menu">
+                <a href="IVU.html">IVU</a>
+                <a href="binairstelsel.html">Binair stelsel</a>
+                <a href="kleurmodellen.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie</a>
+                <a href="ai.html">AI</a>
             </div>
+        </li>
+    </ul>
+</nav>
 
-            <!-- Middelste kolom: Afbeelding -->
-            <div class="kolom kolom-midden">
-                <img src="voetbal.jpg" alt="Voetbal op het veld" onerror="this.onerror=null; this.src='https://picsum.photos/id/1058/400/300';">
-            </div>
+<main>
+    <section>
+        <h2>Over mezelf</h2>
+        <p>Hoi! Ik ben 15 jaar en ik vind voetbal leuk.
+        Deze website heb ik gemaakt voor het vak Informatica.</p>
+        <img src="voetbal.jpg" alt="Een voetbal">
+    </section>
 
-            <!-- Rechter kolom -->
-            <div class="kolom kolom-rechts">
-                <h2>Wat vind je op deze site?</h2>
-                <p>Op de verschillende pagina's leg ik een aantal belangrijke informatica-onderwerpen uit:</p>
-                <ul>
-                    <li><strong>IVU:</strong> Invoer, Verwerking en Uitvoer.</li>
-                    <li><strong>Binair:</strong> Hoe computers rekenen met 0 en 1.</li>
-                    <li><strong>Kleurmodellen:</strong> Het verschil tussen RGB en CMYK.</li>
-                    <li><strong>Compressie:</strong> Verschil tussen Bitmap en Vector.</li>
-                    <li><strong>AI:</strong> Kunstmatige intelligentie op je telefoon.</li>
-                </ul>
-            </div>
+    <section>
+        <h2>Waar gaat deze website over?</h2>
+        <p>Op deze website leg ik vijf onderwerpen uit:
+        IVU, het binaire stelsel, kleurmodellen, compressie en AI.</p>
+        <p>Klik op Onderwerpen in het menu om een onderwerp te kiezen.</p>
+    </section>
+</main>
 
-        </div>
-
-        <!-- Onderste samenvatting -->
-        <div class="uitleg-blok">
-            <h3>Korte samenvatting Informatica</h3>
-            <p>Informatica gaat niet alleen over computers, maar vooral over hoe informatie wordt verwerkt en opgeslagen. Met HTML en CSS kun je zelf bepalen hoe die informatie op een scherm wordt weergegeven.</p>
-        </div>
-    </div>
+<footer>
+    <p>Mijn website - Informatica</p>
+</footer>
 
 </body>
 </html>

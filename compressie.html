@@ -1,41 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compressie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="IVU.html">IVU</a>
-        <a href="kleurmodellen.html">Kleurmodellen</a>
-        <a href="compressie.html">Compressie</a>
-        <a href="ai.html">AI</a>
-    </nav>
+<header>
+    <h1>Compressie</h1>
+</header>
 
-    <div class="container">
-        <h1>Compressie: Bitmap vs Vector</h1>
-        
-        <!-- Foto van grafische vector/geometrische vormen -->
-        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500" alt="Vector kunstvormen">
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Onderwerpen ▼</a>
+            <div class="dropdown-menu">
+                <a href="IVU.html">IVU</a>
+                <a href="binairstelsel.html">Binair stelsel</a>
+                <a href="kleurmodellen.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie</a>
+                <a href="ai.html">AI</a>
+            </div>
+        </li>
+    </ul>
+</nav>
 
-        <h2>Bitmap vs Vector</h2>
-        <p>Afbeeldingen op een computer vallen meestal in twee categorieën:</p>
-        <ul>
-            <li><strong>Bitmap (Raster):</strong> Opgebouwd uit losse vakjes/pixels (zoals JPG en PNG). Als je heel ver inzoomt, zie je lelijke blokjes.</li>
-            <li><strong>Vector:</strong> Opgebouwd uit wiskundige lijnen en vormen (zoals SVG). Deze kun je oneindig groot maken zonder dat de kwaliteit minder wordt.</li>
-        </ul>
+<main>
+    <h2>Wat is compressie?</h2>
+    <p>Compressie betekent dat je een bestand kleiner maakt.
+    Hierdoor neemt het minder opslagruimte in en kan het
+    sneller worden verstuurd.</p>
 
-        <h2>Wat is compressie?</h2>
-        <p>Compressie betekent dat je een bestand kleiner maakt qua geheugen. Hierdoor laadt een pagina sneller op internet.</p>
+    <h2>Lossless en lossy</h2>
+    <p><b>Lossless:</b> alle oorspronkelijke informatie blijft behouden.</p>
+    <p><b>Lossy:</b> een deel van de informatie wordt weggehaald
+    om het bestand kleiner te maken.</p>
 
-        <div class="uitleg-blok">
-            <h3>Korte uitleg over Compressie</h3>
-            <p>Bij <em>Lossy compressie</em> (zoals JPG) gooit de computer onzichtbare details weg om het bestand heel klein te maken. Bij <em>Lossless compressie</em> (zoals PNG of ZIP) blijft alle kwaliteit 100% behouden.</p>
-        </div>
-    </div>
+    <h2>Bitmap en vector</h2>
+    <p>Een bitmapafbeelding bestaat uit kleine pixels.
+    Een vectorafbeelding bestaat uit lijnen en vormen.</p>
+
+    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500"
+         alt="Kleurrijke digitale afbeelding">
+
+    <h2>Uitlegvideo</h2>
+    <p>Een video over bestandscompressie maakt duidelijk
+    waarom bestanden kleiner gemaakt worden.</p>
+    <a href="https://www.youtube.com/results?search_query=compressie+bestanden+uitleg"
+       target="_blank">Bekijk een uitlegvideo op YouTube</a>
+</main>
+
+<footer><p>Compressie - Informatica</p></footer>
 
 </body>
 </html>
