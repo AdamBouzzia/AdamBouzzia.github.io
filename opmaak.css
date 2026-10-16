@@ -146,3 +146,83 @@ h1 {
     color: #0b2545;
     margin-bottom: 10px;
 }
+
+/* Algemene opmaak van de hele website */
+body {
+    background-color: #eaf6ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222222;
+}
+
+/* Opmaak van het menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c5e5ff;
+    overflow: hidden;
+}
+
+/* De links staan naast elkaar */
+nav li {
+    float: left;
+}
+
+/* Opmaak van de links in het menu */
+nav li a {
+    display: block;
+    color: #174a75;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Verander de achtergrondkleur als je over een link gaat */
+nav li a:hover {
+    background-color: #a8d8ff;
+}
+
+/* De witte container met de tekst */
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* De kleur van de hoofdtitel */
+h1 {
+    color: #1769aa;
+}
+
+/* De kleur van de tussenkoppen */
+h2, h3 {
+    color: #287bb5;
+}
+
+/* De afbeelding van de computer */
+.computer-foto {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Ruimte tussen de tekstregels */
+p, li {
+    line-height: 1.6;
+}
+
+/* Het blok met het IVU-voorbeeld */
+.uitleg-blok {
+    background-color: #eaf6ff;
+    padding: 18px;
+    border-left: 5px solid #5aa9e6;
+    border-radius: 8px;
+    margin-top: 25px;
+}
